@@ -12,3 +12,6 @@ window.onclick = function (event) {
     document.querySelector(".dropbtn").setAttribute("aria-expanded", "false");
   }
 };
+function menu_bar_toggle(x) {
+  x.classList.toggle("menu_bar_change");
+}

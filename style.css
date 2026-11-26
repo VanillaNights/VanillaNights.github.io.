@@ -48,13 +48,17 @@ body {
     opacity: 1;
 }
 .board_text h1 {
-    color: #bcbbbb;
+    background: linear-gradient(
+        60deg,
+        #a4c6b8,
+        #5e435d
+    );
+    background-clip: text;
+    color: transparent;
     font-size: 65px;
-    text-shadow: 0 0 8px rgba(188, 187, 187, 0.6),
-                 0 0 24px rgba(188, 187, 187, 0.25);
 }
 .board_text p {
-    font-size: 27px;
+    font-size: 25px;
     padding-right: 15px;
     color: #b1afaf;
 }
@@ -77,15 +81,41 @@ body {
     padding: 0 40px;
 
 }
-.logo {
+.menu {
     width: 30%;
     height: 70%;
     width: 60px;
     border-radius: 45px;
-    background-image: url(images/Glossy_Grooved_Chrome_S_Emblem-removebg-preview.png);
-    background-size: contain;
-    margin-left: 30px;
+    margin-left: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
 }
+.menu_bars { /* class= "menu_bars bar1" */
+    height: 3.3px;
+    width: 50%;
+    background-image: linear-gradient(
+        60deg,
+        #a4c6b8,
+        #5e435d
+    );
+    margin: 1.5px;
+    border-radius: 45px;
+    transition: 0.5s;
+}
+
+.menu_bar_change .bar1 {
+    transform: translate(0, 6.5px) rotate(45deg);
+}
+.menu_bar_change .bar2 {width: 0;}
+.menu_bar_change .bar3 {
+    transform: translate(0, -6.5px) rotate(-45deg);
+}
+
 .navLinksDiv {
     display: flex;
     justify-content: end;
@@ -107,7 +137,13 @@ body {
     transition: color 0.4s, font-size 0.2s;
 }
 .NavLinks:hover {
-    color: #bcbbbb95;
+    background: linear-gradient(
+        90deg,
+        #a4c6b8,
+        #5e435d
+    );
+    background-clip: text;
+    color: transparent;
     font-size: 16.5px;
 }
 

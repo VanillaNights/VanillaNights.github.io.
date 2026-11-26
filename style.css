@@ -1,0 +1,157 @@
+/* COLOR PALETTE : Concrete Jungle Shades
+https://coolors.co/696969-4f4f4f-333333-252525-141414-033933-024c42-017365-1e776d
+*/
+.geist {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Geist", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    background-color: #141414;
+    background-image:
+        linear-gradient(110deg, rgba(12, 16, 24, 0.5), rgba(12, 16, 24, 0.05)),
+        url(images/veli-batuhan-aytac-0dmj6A8HoWw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.board {
+    background-color: rgba(20, 20, 20, 0.9);
+    width: 80vw;
+    max-width: 1200px;
+    height: 70vh;
+    margin-bottom: 50px;
+    aspect-ratio: 1365 / 768;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+.board_text {
+    /*top right bottom left*/
+    padding: 200px 0 0 100px;
+    opacity: 1;
+}
+.board_text h1 {
+    color: #bcbbbb;
+    font-size: 65px;
+    text-shadow: 0 0 8px rgba(188, 187, 187, 0.6),
+                 0 0 24px rgba(188, 187, 187, 0.25);
+}
+.board_text p {
+    font-size: 27px;
+    padding-right: 15px;
+    color: #b1afaf;
+}
+
+/*NAVIGATION BAR-------------------------*/
+.navBar {
+    width: 100vw;
+    max-width: 1200px;
+    height: 9vh;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    opacity: 0.9;
+
+    background-color: #141414;
+    border: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+}
+.logo {
+    width: 30%;
+    height: 70%;
+    width: 60px;
+    border-radius: 45px;
+    background-image: url(images/Glossy_Grooved_Chrome_S_Emblem-removebg-preview.png);
+    background-size: contain;
+    margin-left: 30px;
+}
+.navLinksDiv {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 70%;
+}
+.NavLinks {
+    margin: 0 15px;
+    color: #b1afaf;
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    cursor: pointer;
+    transition: color 0.4s, font-size 0.2s;
+}
+.NavLinks:hover {
+    color: #bcbbbb95;
+    font-size: 16.5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #b1afaf;
+  min-width: max-content;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+  left: -30px;
+  top: 30px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.show {display: block;}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined {
+    font-family: "Material Symbols Outlined";
+    font-size: 25px;
+    line-height: 1;
+    vertical-align: middle;
+    transition: transform 0.4s ease;
+}
+.dropbtn[aria-expanded="true"] .material-symbols-outlined {
+    transform: rotate(-180deg);
+}

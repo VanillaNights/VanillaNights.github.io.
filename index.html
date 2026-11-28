@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--HORIZONTAL NAVIGATION BAR----------------------------->
     <div class="navBar">
-        <div class="menu" onclick="menu_bar_toggle(this)">
+        <button class="menu-button" onclick="menu_bar_toggle()">
             <div class="menu_bars bar1"></div>
             <div class="menu_bars bar2"></div>
             <div class="menu_bars bar3"></div>
-        </div>
+        </button>
         <div class="navLinksDiv">
             <div class="dropdown">
                 <button onclick="drop()" class="NavLinks works dropbtn" aria-expanded="false">
@@ -37,6 +38,19 @@
             <button class="NavLinks contact">CONTACT</button>
         </div>
     </div>
+    <!--VERTICAL NAVIGATION MENU ---------------------------->
+
+    <div class="menu-overlay" onclick="menu_bar_toggle()"></div>
+    <aside class="side-menu">
+
+        <div class="side-menu-items">
+            <button class="side-menu-item">WORKS</button>
+            <button class="side-menu-item">ABOUT</button>
+            <button class="side-menu-item">EXPERIENCE</button>
+            <button class="side-menu-item">CONTACT</button>
+        </div>
+    </aside>
+    <!--MAIN ------------------------------------------------>
     <div class="board">
         <div class="board_text">
             <h1>Hello, I'm Sara.</br> I Build for the Web.</h1>
@@ -50,3 +64,10 @@
     <script src="js.js"></script>
 </body>
 </html>
+
+<!--DELETED CODE -------------------------->
+<!-- deleted button --------------------------------------------
+        <button class="side-menu-close-button">
+            <span>close</span>
+        </button>
+-->
